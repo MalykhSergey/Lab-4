@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Лабораторная работа №4</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container-fluid">
+    <h1>Лабораторная работа №4</h1>
+    <h2>Авто:</h2>
+    <div class="container mb-5">
+        <form>
+            <div class="mb-3">
+                <label for="modelName" class="form-label">Название модели</label>
+                <input type="text" class="form-control" id="modelName" required>
+            </div>
+            <div class="mb-3">
+                <label for="brandName" class="form-label">Марка модели</label>
+                <input type="text" class="form-control" id="brandName" required>
+            </div>
+            <div class="mb-3">
+                <label for="year" class="form-label">Год</label>
+                <input type="number" class="form-control" id="year" min="1900" max="2023" required>
+            </div>
+            <div class="mb-3">
+                <label for="maxSpeed" class="form-label">Максимальная скорость</label>
+                <input type="number" class="form-control" id="maxSpeed" min="1" max="700" required>
+            </div>
+            <div class="mb-3">
+                <label for="capacity" class="form-label">Объём двигателя</label>
+                <input type="number" class="form-control" id="capacity" step="0.1" min="0.1" max="10" required>
+            </div>
+            <div class="mb-3">
+                <label for="price" class="form-label">Цена</label>
+                <input type="number" class="form-control" id="price" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Добавить авто</button>
+        </form>
+    </div>
+    <div id="cars" class="container">
+    </div>
+</div>
+<script src="/js/bootstrap.bundle.min.js"></script>
+<script type="module" src="js/main.js"></script>
+</body>
+</html>
